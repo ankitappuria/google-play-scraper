@@ -9,7 +9,7 @@ npm install google-play-scraper
 ## Usage
 ### app(appId, lang)
 
-Retrieves the full detail of an application. Parameters:
+Retrieves the full detail of an application. Parameters:(with review and screen shot detail)
 
 * `appId`: the Google Play id of the application (the `?id=` parameter on the url).
 * `lang` (optional, defaults to `'en'`): the two letter language code in which to fetch the app page.
@@ -46,6 +46,21 @@ Results:
   price: '0',
   free: true,
   video: 'https://www.youtube.com/embed/PFGj-W8Pe5s'
+  screenshots:[
+    "https://lh6.ggpht.com/5mI27oolnooL__S3ns9qAf_6TsFNExMtUAwTKz6pkWCxEmVkmZZZwe3lI-ZLbMawEJh3=h310",
+    "https://lh6.ggpht.com/5mI27oolnooL__S3ns9qAf_6TsFNExMtUAwTKz6piWCxEmVkmZZZwe3lI-ZLbMawEJh3=h310",
+    ....
+  ],
+  reviewDescription:[
+    {
+      author:'Elivs',
+      date:'May 30 2015',
+      rating:5,
+      comment:'Nice App...'
+    },
+    { ... },
+  ........
+  ]
 }
 ```
 
